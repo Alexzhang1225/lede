@@ -54,6 +54,7 @@ jobs:
           cd openwrt-packages
           git clone https://github.com/immortalwrt/luci-app-koolproxyR.git
           git clone https://github.com/rosywrt/luci-theme-rosy.git
+          git clone https://github.com/maxlicheng/luci-app-ssr-plus.git
 
           # sudo mkdir -p -m 777 /mnt/openwrt/bin /mnt/openwrt/build_dir/host /mnt/openwrt/build_dir/hostpkg /mnt/openwrt/dl /mnt/openwrt/feeds /mnt/openwrt/staging_dir
           # ln -s /mnt/openwrt/bin ./bin
@@ -187,7 +188,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           CONFIG_PACKAGE_luci-app-cpufreq=y
           CONFIG_PACKAGE_luci-app-koolproxyR=y
-          CONFIG_PACKAGE_=y
+          CONFIG_PACKAGE_luci-app-ssr-plus=y
           CONFIG_PACKAGE_=y
           CONFIG_PACKAGE_=y
           CONFIG_PACKAGE_=y
